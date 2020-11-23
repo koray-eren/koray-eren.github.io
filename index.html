@@ -7,6 +7,7 @@
     justify-content: space-around;
     width: 300px;
     margin: auto;
+    list-style: disc;
   }
   .small-image{
     width:100px;
@@ -14,8 +15,8 @@
   body{
     background-color:coral;
   }
-  .test{
-    padding:1.5em
+  .page-heading{
+    padding:0.5em;
   }
   body{
     text-align: center;
@@ -23,11 +24,12 @@
   h1{
     color: coral;
   }
-  div{
+  .page-heading-container{
     background-color: hsl(60,50%,95%);
-    border-radius: 25%;
+    border-radius: 10%;
     height: auto;
-    width: 200px;
+    width: auto;
+    max-width: 20vw;
     margin: auto;
   }
 </style>
@@ -38,28 +40,28 @@
     <title>Koray Eren</title>
   </head>
   <body>
-    <div>
-      <h1 class="test">alright</h1>
+    <div class="page-heading-container">
+      <h1 class="page-heading">Koray Eren</h1>
     </div>
-    <h2>alright</h2>
-    <h3>alright</h3>
-    <p>alright</p>
 
-    <img class="small-image" src="https://goo.gl/pVxY0e" alt="Floating Flower" width=500/>
+    <p id="page-description-text"> This page contains links to my projects: </p>
 
+    <h3>HTML/CSS (Vanilla)</h3>
     <h4>Free Code Camp - Responsive Web Design Projects</h4>
     <ol id="flex-list">
       <li><a href="https://koray-eren.github.io/tribute-page">Tribute Page</a></li>
       <li><a href="https://koray-eren.github.io/FCC-survey-form/">Survey Form</a></li>
-      <li><a href="https://koray-eren.github.io">item3</a></li>
+      <li><a href="https://koray-eren.github.io/product-landing-page-FCC">Product Landing Page (WIP)</a></li>
     </ol>
-        
+  <!-- 
+    TODO: filter projects by checkbox (categories)
     <form action="Submit">
       <h4>Checkbox</h4>
       <label for="option1"><input type="checkbox" name="options" value="on1" id="option1">option1</label>
       <label for="option2"><input type="checkbox" name="options" value="on2" id="option2">option2</label>
       <label for="option3"><input type="checkbox" name="options" value="on3" id="option3">option3</label>
     </form>
+  -->
     
   </body>
 </html>
